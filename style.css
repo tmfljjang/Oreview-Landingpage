@@ -1,0 +1,420 @@
+:root {
+	--primary-color: #333;
+	--secondary-color: #444;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+@font-face { font-family: '양진체'; src: url('https://cdn.jsdelivr.net/gh/supernovice-lab/font@0.9/yangjin.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+body {
+	font-family: 'NanumSquare';
+	color: #333;
+}
+
+h1,h2,h3,h4 {
+	line-height: 1.3;
+}
+
+a {
+	text-decoration: none;
+	color: var(--secondary-color);
+}
+
+ul {
+	list-style: none;
+}
+
+.container {
+	max-width: 1100px;
+	margin: auto;
+	padding: 1.5rem 2rem;
+	overflow: hidden;
+}
+
+.navbar .container {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.container .logo {
+	font-size: 1.8rem;
+	justify-content: center;
+	align-items: center;
+	font-family: '양진체';
+}
+
+.container .nav {
+	display: flex;
+	justify-self: flex-end;
+	flex-direction: row;
+	font-size: 1.1rem;
+	justify-content: center;
+	align-items: center;
+}
+
+.navbar .nav a {
+	padding: 0 1rem;
+}
+
+.navbar .nav a:hover {
+	color: #666;
+}
+
+/*Seciton A*/
+
+.section-a .container {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	justify-content: center;
+	align-items: center;
+	grid-gap: 2rem;
+	padding-bottom: 0;
+}
+
+.section-a .welcome-text {
+	padding-bottom: 25px;
+}
+
+.section-a .welcome-text h2 {
+	font-size: 1.8rem;
+}
+
+.section-a .welcome-text h3 {
+	font-size: 1.4rem;
+	margin: 0.8rem 0;
+}
+
+.section-a .welcome-text p {
+	margin-bottom: 2rem;
+}
+
+.section-a img {
+	width: 700px;
+	height: 460px;
+}
+
+.section-a .welcome-text .stroke {
+	color: yellow;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	font-size: 1.4rem;
+}
+
+.yellow {
+	color: yellow;
+	text-shadow: 1px 1px 1px black;
+	font-size: 1.2rem;
+	font-weight: 600;
+}
+
+/*Section-B*/
+
+.section-b {
+	position: relative;
+	background: url('pen.jpg');
+	height: 600px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+
+.section-b-inner {
+	max-width: 860px;
+	margin: auto;
+	margin-top: 5rem;
+	color: #fff;
+}
+
+.section-b-grid {
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+	justify-content: center;
+	align-items: center;
+	grid-gap: 2rem;
+}
+
+.section-b-grid p {
+	line-height: 1.5rem;
+}
+
+.section-b-grid img{
+	justify-self: center;
+	height: 300px;
+	max-width: 400px; 
+}
+
+.section-b-text {
+	text-align: center;
+	margin-bottom: 2.4rem;
+}
+
+.section-b-text h3 {
+	font-size: 1.5rem;
+	font-weight: bolder;
+}
+
+.section-b-text p {
+	font-size: 1.2rem;
+}
+
+/*Section C*/
+
+.section-c .section-c-text {
+	margin-top: 2rem;
+}
+
+.section-c .section-c-text h3{
+	font-size: 1.3rem;
+}
+
+.section-c-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	justify-content: center;
+	align-items: center;
+	justify-self: center;
+	margin: 1rem;
+	grid-gap: 1rem;
+}
+
+.section-c .first-service, .section-c .second-service, section-c .third-service {
+	max-width: 350px;
+}
+
+.section-c-grid img{
+	margin: 1rem 0;
+	height: 420px;
+	width: 250px;
+	margin: 1rem 1.9rem;
+}
+
+.section-c h3 {
+	font-size: 1.2rem;
+	font-weight: 800;
+	text-align: center;
+}
+
+.section-c p {
+	font-size: 0.9rem;
+	padding: 1rem 3rem;
+	line-height: 1.2rem;
+}
+
+.section-d {
+	background: #F9F7F7;
+	color: black;
+}
+
+/*Section D*/
+
+.section-d .email-text {
+	margin: 0, 0.5rem;
+	padding: 0;
+}
+
+.section-d .email-form-title{
+	font-size: 1.5rem;
+	font-weight: 400;
+	border-bottom: 0.9px solid black;
+	padding: 0.3rem 0.5rem 1rem 0;
+	font-family: '양진체';
+}
+
+.email-text p {
+	padding-top: 1rem;
+	line-height: 1.3rem;
+	font-size: 0.9rem;
+}
+
+.section-d .email-form{
+	display: block;
+	padding: 1rem 0 0.5rem 0;
+	font-weight: 600;
+}
+
+.section-d label input {
+	margin-bottom: 1rem;
+	width: 558px;
+	height: 28px;
+}
+
+.section-d form{
+	border: 1px solid black;
+	padding: 1rem;
+	max-width: 600px;
+	margin: auto;
+}
+
+.section-d .sent-btn{
+	display: block;
+	padding: 0.7rem 1.5rem;
+	font-size: 1.3rem;
+	font-weight: 700;
+	margin: auto;
+}
+
+footer {
+	background: #333;
+	color: #fff;
+	padding: 0.5rem;
+	text-align: center;
+	font-size: 0.7rem;
+}
+
+/*Utilities*/
+
+.btn {
+	background: var(--primary-color);
+	color: #fff;
+	padding: 1rem;
+	border-radius: 10px;
+	font-weight: 900;
+	line-height: 1.1rem;
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: rgba(0,0,0,0.6);
+	width: 100%;
+	height: 100%;
+}
+
+
+/*Small Screens*/
+
+@media(max-width: 560px) {
+	
+	.container .logo {
+	font-size: 1.9rem;
+	font-family: '양진체';
+	padding-top: 1rem;
+	}
+
+	.container .nav {
+	display: none;
+	}
+	
+	.section-a .container {
+	grid-template-columns: 1fr;
+	}
+	
+	.section-a img {
+	display: none;
+	}	
+	
+	.section-a {
+	height: 50vh;
+	padding-top: 3.5rem;
+	}
+	
+	.section-b-inner {
+	margin-top: 5rem;
+	text-align: center;
+	max-width: 300px;
+	}
+
+	.section-b-grid {
+	grid-template-columns: 1fr;
+	}
+	
+	.section-b-grid p {
+	font-size: 0.9rem;
+	text-align: left;
+	}
+
+	.section-b-grid img{
+	justify-self: center;
+	height: 130px;
+	margin-bottom: 1rem;
+	}
+	
+	.section-b-text {
+	margin-bottom: 2rem;
+	}
+
+	.section-b-text h3 {
+	font-size: 1.3rem;
+	font-weight: bolder;
+	}
+
+	.section-b-text p {
+	display: none;
+	}
+	
+	.section-c-grid {
+	grid-template-columns: 1fr;
+	}
+		
+	.section-c-grid div {
+	border-bottom: 1px dashed #333;	
+	text-align: center;
+	}
+	
+	.section-c-grid img{
+	height: 300px;
+	width: 200px;
+	}
+	
+	.section-d label input {
+	width: 280px;
+	}
+}
+
+@media(max-width: 360px) {
+	
+	.section-a {
+	padding-top: 2rem;
+	}
+	
+	.section-d label input {
+	width: 260px;
+	}
+}
+
+@media(max-width: 320px) {
+	
+	.section-a {
+	padding-top: 0;
+	}
+	
+	.section-a .container {
+	padding-top: 1.2rem;
+	}
+	
+	.section-a .welcome-text h2 {
+	font-size: 1.4rem;
+	}
+
+	.section-a .welcome-text h3 {
+	font-size: 1.2rem;
+	margin: 0.8rem 0;
+	}
+
+	.section-a .welcome-text p {
+	margin-bottom: 2rem;
+	}
+	
+	.section-b-grid p {
+	padding: 0 0.6rem;
+	}
+	
+	.section-d .email-form-title{
+	font-size: 1.2rem;
+	}
+
+	.email-text p {
+	padding-top: 1rem;
+	font-size: 0.8rem;
+	}
+	
+	.section-d label input {
+	width: 220px;
+	}
+}
