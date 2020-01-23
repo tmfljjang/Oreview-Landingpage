@@ -362,6 +362,12 @@ footer {
 	width: 200px;
 	}
 	
+	.section-c p {
+		padding: 1rem 1rem;
+		font-size: 0.8rem;
+		text-align: left;
+	}
+	
 	.section-d label input {
 	width: 280px;
 	}
